@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="text-center p-5 bg-white shadow">
+        <h1 class="text-4xl font-bold">Your Name</h1>
+        <p>A brief tagline or bio</p>
+    </header>
+
+    <section id="portfolio" class="p-5">
+        <h2 class="text-3xl font-bold text-center">Portfolio</h2>
+        <!-- Project cards -->
+        <div class="flex flex-wrap justify-center">
+            <!-- Example project -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                <img class="w-full" src="https://source.unsplash.com/random/400x200?sig=1" alt="Project">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Project Title</div>
+                    <p class="text-gray-700 text-base">
+                        Project description.
+                    </p>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="about" class="p-5 bg-white">
+        <h2 class="text-3xl font-bold text-center">About Me</h2>
+        <p class="text-center">
+            Detailed personal and professional information.
+        </p>
+    </section>
+
+    <section id="contact" class="p-5">
+        <h2 class="text-3xl font-bold text-center">Contact</h2>
+        <div class="flex justify-center">
+            <div class="w-full max-w-xs">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="you@example.com">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center p-5 bg-white shadow mt-5">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
